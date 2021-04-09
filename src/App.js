@@ -11,8 +11,8 @@ import firebase from "firebase";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 
 firebase.initializeApp({
-  apiKey: "AIzaSyDLoqcbTDMFuurtAyDgVEKZ6qwo0j0Osjk",
-  authDomain: "fir-auth-tutorial-ed11f.firebaseapp.com",
+  apiKey: "AIzaSyBSawNS1hKhRJFppzavRFxyG4ruWWRvyY4",
+  authDomain: "easyway-c337c.firebaseapp.com",
 });
 
 class App extends Component {
@@ -22,6 +22,7 @@ class App extends Component {
     signInOptions: [
       firebase.auth.GoogleAuthProvider.PROVIDER_ID,
       firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+      firebase.auth.EmailAuthProvider.PROVIDER_ID,
     ],
     callbacks: {
       signInSuccess: () => false,
