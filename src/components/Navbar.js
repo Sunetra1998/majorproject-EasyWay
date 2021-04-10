@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaAlignRight } from "react-icons/fa";
 export default class Navbar extends Component {
   state = {
-    isOpen: false
+    isOpen: false,
   };
   handleToggle = () => {
     this.setState({ isOpen: !this.state.isOpen });
@@ -14,7 +14,7 @@ export default class Navbar extends Component {
         <div className="nav-center">
           <div className="nav-header">
             <Link to="/">
-              <img src="" alt="EasyWay" />
+              <h3>EasyWay</h3>
             </Link>
             <button
               type="button"
